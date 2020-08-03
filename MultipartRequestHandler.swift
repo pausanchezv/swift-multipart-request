@@ -1,9 +1,9 @@
 //
 //  MultipartRequestHandler.swift
-//  OpportunityNetwork
+//  www.pausanchezv.com
 //
 //  Created by Pau Sanchez on 05/07/2020.
-//  Copyright © 2020 Opportunity Network. All rights reserved.
+//  Copyright © 2020 pausanchezv.com. All rights reserved.
 //
 
 import UIKit
@@ -84,7 +84,7 @@ import UIKit
 /// - Version: 2.0
 /// - Author: Pau Sanchez - Computer Engineer
 /// - Date: 05/07/2020
-/// - Copyright: Opportunity Network
+/// - Copyright: www.pausanchezv.com
 ///
 open class MultipartRequestHandler: NSObject {
     
@@ -96,7 +96,7 @@ open class MultipartRequestHandler: NSObject {
     /// - Version: 2.0
     /// - Author: Pau Sanchez - Computer Engineer
     /// - Date: 05/07/2020
-    /// - Copyright: Opportunity Network
+    /// - Copyright: www.pausanchezv.com
     ///
     private(set) var serverUrl: String
     
@@ -108,7 +108,7 @@ open class MultipartRequestHandler: NSObject {
     /// - Version: 2.0
     /// - Author: Pau Sanchez - Computer Engineer
     /// - Date: 05/07/2020
-    /// - Copyright: Opportunity Network
+    /// - Copyright: www.pausanchezv.com
     ///
     public init(serverUrl: String) {
         self.serverUrl = serverUrl
@@ -122,7 +122,7 @@ open class MultipartRequestHandler: NSObject {
     /// - Version: 2.0
     /// - Author: Pau Sanchez - Computer Engineer
     /// - Date: 05/07/2020
-    /// - Copyright: Opportunity Network
+    /// - Copyright: www.pausanchezv.com
     ///
     public func getMultipartRequest(filePath: URL, formFields: [String: String], fileKey: String) -> URLRequest {
         
@@ -190,7 +190,7 @@ open class MultipartRequestHandler: NSObject {
     /// - Version: 2.0
     /// - Author: Pau Sanchez - Computer Engineer
     /// - Date: 05/07/2020
-    /// - Copyright: Opportunity Network
+    /// - Copyright: www.pausanchezv.com
     ///
     private func convertFormField(named name: String, value: String, using boundary: String) -> String {
         var fieldString = "--\(boundary)\r\n"
@@ -210,7 +210,7 @@ open class MultipartRequestHandler: NSObject {
     /// - Version: 2.0
     /// - Author: Pau Sanchez - Computer Engineer
     /// - Date: 05/07/2020
-    /// - Copyright: Opportunity Network
+    /// - Copyright: www.pausanchezv.com
     ///
     private func convertFileData(fieldName: String, fileName: String, mimeType: String, fileData: Data, using boundary: String) -> Data {
         let data = NSMutableData()
@@ -232,7 +232,7 @@ open class MultipartRequestHandler: NSObject {
     /// - Version: 2.0
     /// - Author: Pau Sanchez - Computer Engineer
     /// - Date: 05/07/2020
-    /// - Copyright: Opportunity Network
+    /// - Copyright: www.pausanchezv.com
     ///
     private func getFileExtension(from file: String) -> String {
         return String(file.split(separator: ".").last ?? "")
@@ -246,7 +246,7 @@ open class MultipartRequestHandler: NSObject {
     /// - Version: 2.0
     /// - Author: Pau Sanchez - Computer Engineer
     /// - Date: 05/07/2020
-    /// - Copyright: Opportunity Network
+    /// - Copyright: www.pausanchezv.com
     ///
     private func getMimeType(from fileExtension: String) -> String {
         
@@ -293,7 +293,7 @@ open class MultipartRequestHandler: NSObject {
 /// - Version: 2.0
 /// - Author: Pau Sanchez - Computer Engineer
 /// - Date: 05/07/2020
-/// - Copyright: Opportunity Network
+/// - Copyright: www.pausanchezv.com
 ///
 extension NSMutableData {
     func appendString(_ string: String) {
